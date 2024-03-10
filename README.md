@@ -13,14 +13,14 @@ jaspr create raw_html_app
 
 # Issue
 
-Now run the example application via `jaspr serve` and notice that the raw HTML is not being served or at least it gets malformed in transit.
-
+Now run the example application via `jaspr serve` and notice that the raw HTML is not being served or at least it gets malformed in transit. The first "Hello World 1" `p` tag is completely missing and the `img` tag is empty. The `rawHtml` flag is doing something odd to the resulting HTML and interfering with other elements.
+    
 The resulting HTML is:
 
 ```html
 <body>
-    <p>Hello World</p>
     <img>
+    <p>Hello World 2</p>
 </body>
 ```
 
