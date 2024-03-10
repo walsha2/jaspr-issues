@@ -1,5 +1,27 @@
-# jaspr-issues
+# Reproducing
 
-Jaspr Web Issue Examples
+```
+jaspr --version
+0.10.0
+```
 
-Each branch is a reproduction of a specific issue or feature request. Intended to help with reproducing and debugging issues.
+Create new app in `client` only mode:
+
+```
+jaspr create router_app
+```
+
+Add `jaspr_router`
+
+```
+cd router_app/
+dart pub add jaspr_router
+```
+
+# Issue
+
+Now run the example application via `jaspr serve` and notice that navigating to any route aside from `/` will result in a 404 error. For example:
+
+```
+http://localhost:8080/about
+```
