@@ -20,7 +20,7 @@ dart pub add jaspr_router
 
 # Issue
 
-Now run the example application via `jaspr serve` and notice that navigating to any route aside from `/` will result in a 404 error. For example:
+Now run the example application via `jaspr serve` and notice that navigating to any route (directly via the URL bar) aside from `/` will result in a 404 error. For example:
 
 ```
 http://localhost:8080/about
